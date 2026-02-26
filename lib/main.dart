@@ -30,7 +30,7 @@ class splashscreen extends State<fluttertask2> {
             color: Colors.white,
           ),
           Positioned(
-            top: -350,
+            top: -380,
             left: -200,
             child: Container(
               height: 500,
@@ -42,7 +42,7 @@ class splashscreen extends State<fluttertask2> {
             ),
           ),
          Positioned(
-            top: -500,
+            top: -550,
             left: -370,
             child: Container(
               decoration: BoxDecoration(
@@ -55,26 +55,48 @@ class splashscreen extends State<fluttertask2> {
             ),
           ),
           Container(
-            margin: const EdgeInsets.only(bottom: 150),
-              child: Center(child: Image.asset('assets/images/boyimage.jpg'))
+            height:  MediaQuery.of(context).size.height*0.30,
+            width:  MediaQuery.of(context).size.width*0.55,
+            margin: const EdgeInsets.only(top: 150, left: 80),
+              child: Center(child: Image.asset('assets/images/fluttertask2image.png'))
           ),
           Container(
-            margin: const EdgeInsets.only(top: 600, left: 70),
-              child: Text('Gets things with TODs',style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),)
+            margin: const EdgeInsets.only(top: 380, left: 60),
+              child: Text('Gets things with TODs',style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),)
           ),
           Container(
-            margin: const EdgeInsets.only(top: 670, left: 50),
-              child: Text('Lorem ipsum dolor sit amet consectetur. Eget sit nec et euismod. Consequat urna quam felis interdum quisque. Malesuada adipiscing tristique ut eget sed.')
+            margin: const EdgeInsets.only(top: 450, left: 95),
+              child: Text('Lorem ipsum dolor sit amet')
           ),
           Container(
-            margin: const EdgeInsets.only(top: 800, left: 40),
+              margin: const EdgeInsets.only(top: 470, left: 95),
+              child: Text('consectetur. Eget sit nec et')
+          ),
+          Container(
+              margin: const EdgeInsets.only(top: 490, left: 100),
+              child: Text('euismod. Consequat urna')
+          ),
+          Container(
+              margin: const EdgeInsets.only(top: 510, left: 90),
+              child: Text('quam felis interdum quisque')
+          ),
+          Container(
+              margin: const EdgeInsets.only(top: 530, left: 85),
+              child: Text('Malesuada adipiscing tristique')
+          ),
+          Container(
+              margin: const EdgeInsets.only(top: 550, left: 140),
+              child: Text('ut eget sed')
+          ),
+          Container(
+            margin: const EdgeInsets.only(top: 650, left: 30),
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadiusGeometry.circular(10),
                 ),
                 backgroundColor:  Color(0xFF15a6ab),
-                minimumSize: Size(380, 70),
+                minimumSize: Size(300, 50),
               ),
               child: Text('Get Started',style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),),
               onPressed: (){

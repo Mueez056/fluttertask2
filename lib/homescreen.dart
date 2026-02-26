@@ -16,12 +16,12 @@ class fourthscreenState extends State<fourthscreen>{
               color: Colors.white,
             ),
             Container(
-              height: 350,
+              height: 280,
               width: double.infinity,
               color: Color(0xFF15a6ab),
             ),
             Positioned(
-              top: -350,
+              top: -380,
               left: -200,
               child: Container(
                 height: 500,
@@ -33,7 +33,7 @@ class fourthscreenState extends State<fourthscreen>{
               ),
             ),
             Positioned(
-              top: -500,
+              top: -550,
               left: -370,
               child: Container(
                 decoration: BoxDecoration(
@@ -46,31 +46,27 @@ class fourthscreenState extends State<fourthscreen>{
               ),
             ),
             Container(
-              height: 150,
-              width: 150,
-              margin: const EdgeInsets.only(top: 130, left: 150),
-              child: CircleAvatar(
-                backgroundImage: AssetImage('assets/images/dashboardpic.jpg'),
-              ),
+              height:  MediaQuery.of(context).size.height*0.20,
+              width:  MediaQuery.of(context).size.width*0.30,
+              margin: const EdgeInsets.only(top: 100, left: 130),
+              child: Image.asset('assets/images/silhouette of a pers.png'),
             ),
             Container(
-                margin: const EdgeInsets.only(top: 300, left: 120),
+                margin: const EdgeInsets.only(top: 240, left: 80),
                 child: Text('Welcome hamza jadoon', style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white, fontSize: 20),)
             ),
             Container(
-                margin: const EdgeInsets.only(top: 360, left: 270),
-                child: Text('Good Afternoon', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),)
+                margin: const EdgeInsets.only(top: 290, left: 230),
+                child: Text('Good Afternoon', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),)
             ),
             Container(
-              height: 200,
-              width: 200,
-              margin: const EdgeInsets.only(top: 370, left: 120),
-              child: CircleAvatar(
-                backgroundImage: AssetImage('assets/images/clockimage.png'),
-              ),
+              height:  MediaQuery.of(context).size.height*0.30,
+              width:  MediaQuery.of(context).size.width*0.40,
+              margin: const EdgeInsets.only(top: 245, left: 110),
+              child: Image.asset('assets/images/round analog clock w.png'),
             ),
             Container(
-                margin: const EdgeInsets.only(top: 550, left: 10),
+                margin: const EdgeInsets.only(top: 400, left: 10),
                 child: Text('Task List', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),)
             ),
             Container(
@@ -83,11 +79,11 @@ class fourthscreenState extends State<fourthscreen>{
                 color: Colors.grey.shade300,
                 borderRadius: BorderRadius.circular(10),
               ),
-              height: 350,
-              width: 380,
-              margin: const EdgeInsets.only(top: 600, left: 35),
+              height:  MediaQuery.of(context).size.height*0.37,
+              width:  MediaQuery.of(context).size.width*0.90,
+              margin: const EdgeInsets.only(top: 440, left: 18),
               child: Container(
-                margin: const EdgeInsets.only(bottom: 300),
+                margin: const EdgeInsets.only(bottom: 250),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -101,7 +97,7 @@ class fourthscreenState extends State<fourthscreen>{
               ),
             ),
             Container(
-              margin: const EdgeInsets.only(top: 700, left: 40),
+              margin: const EdgeInsets.only(top: 470, left: 30),
               child: Column(
                 children: [
                   Row(

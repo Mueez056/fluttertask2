@@ -18,7 +18,7 @@ class secondscreenState extends State<secondscreen>{
               color: Colors.white,
             ),
             Positioned(
-              top: -350,
+              top: -380,
               left: -200,
               child: Container(
                 height: 500,
@@ -30,7 +30,7 @@ class secondscreenState extends State<secondscreen>{
               ),
             ),
             Positioned(
-              top: -500,
+              top: -550,
               left: -370,
               child: Container(
                 decoration: BoxDecoration(
@@ -43,21 +43,21 @@ class secondscreenState extends State<secondscreen>{
               ),
             ),
             Container(
-                margin: const EdgeInsets.only(top: 250, left: 60),
-                child: Text('Welcome to Onboard!', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 35),)
+                margin: const EdgeInsets.only(top: 200, left: 40),
+                child: Text('Welcome to Onboard!', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),)
             ),
             Container(
-                margin: const EdgeInsets.only(top: 300, left: 150),
+                margin: const EdgeInsets.only(top: 250, left: 110),
                 child: Text('lets help to meet up your')
             ),
             Container(
-                margin: const EdgeInsets.only(top: 320, left: 200),
+                margin: const EdgeInsets.only(top: 275, left: 160),
                 child: Text('tasks')
             ),
             Container(
-              height: 50,
-              width: 350,
-              margin: const EdgeInsets.only(top: 410, left: 50),
+              height:  MediaQuery.of(context).size.height*0.06,
+              width:  MediaQuery.of(context).size.width*0.80,
+              margin: const EdgeInsets.only(top: 350, left: 40),
               child: TextField(
                 decoration: InputDecoration(
                     label: Text('Enter your full name'),
@@ -77,9 +77,9 @@ class secondscreenState extends State<secondscreen>{
               ),
             ),
             Container(
-              height: 50,
-              width: 350,
-              margin: const EdgeInsets.only(top: 480, left: 50),
+              height:  MediaQuery.of(context).size.height*0.06,
+              width:  MediaQuery.of(context).size.width*0.80,
+              margin: const EdgeInsets.only(top: 410, left: 40),
               child: TextField(
                 decoration: InputDecoration(
                     label: Text('Enter your email'),
@@ -99,9 +99,9 @@ class secondscreenState extends State<secondscreen>{
               ),
             ),
             Container(
-              height: 50,
-              width: 350,
-              margin: const EdgeInsets.only(top: 550, left: 50),
+              height:  MediaQuery.of(context).size.height*0.06,
+              width:  MediaQuery.of(context).size.width*0.80,
+              margin: const EdgeInsets.only(top: 470, left: 40),
               child: TextField(
                 decoration: InputDecoration(
                     label: Text('Enter Password'),
@@ -121,9 +121,9 @@ class secondscreenState extends State<secondscreen>{
               ),
             ),
             Container(
-              height: 50,
-              width: 350,
-              margin: const EdgeInsets.only(top: 620, left: 50),
+              height:  MediaQuery.of(context).size.height*0.06,
+              width:  MediaQuery.of(context).size.width*0.80,
+              margin: const EdgeInsets.only(top: 530, left: 40),
               child: TextField(
                 decoration: InputDecoration(
                     label: Text('Confirm Password'),
@@ -143,18 +143,18 @@ class secondscreenState extends State<secondscreen>{
               ),
             ),
             Container(
-                margin: const EdgeInsets.only(top: 880,left: 100),
+                margin: const EdgeInsets.only(top: 690,left: 70),
                 child: Text('Already have an account?', style: TextStyle(fontWeight: FontWeight.bold),)
             ),
             Container(
-              margin: const EdgeInsets.only(top: 800, left: 40),
+              margin: const EdgeInsets.only(top: 640, left: 35),
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadiusGeometry.circular(10),
                   ),
                   backgroundColor:  Color(0xFF15a6ab),
-                  minimumSize: Size(380, 70),
+                  minimumSize: Size(300, 50),
                 ),
                 child: Text('Register',style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),),
                 onPressed: (){
@@ -163,7 +163,7 @@ class secondscreenState extends State<secondscreen>{
               ),
             ),
             Container(
-              margin: const EdgeInsets.only(top: 865, left: 265),
+              margin: const EdgeInsets.only(top: 675, left: 230),
               child: TextButton(
                 child: Text('Sign in',style: TextStyle(fontWeight: FontWeight.bold, color: Color(0xFF15a6ab),),),
                 onPressed: (){
